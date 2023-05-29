@@ -29,7 +29,7 @@ $city = array("Lampung", "Riau", "Jambi", "Bengkulu", "Makassar", "Kendari", "Go
 $array = array();
 for ($i = 0; $i < strlen($name); $i++){
     $searchcity = strtolower($name[$i]);
-    for($j = 0; $j < count($kota); $j++){
+    for($j = 0; $j < count($city); $j++){
         $addcity = strtolower($city[$j]);
         if ($searchcity == $addcity[0]){
             array_push($array, $city[$y]);
