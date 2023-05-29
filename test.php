@@ -3,11 +3,11 @@
 $nama = "salma";
 $panjangNama = strlen($nama);
 if($panjangNama == (date('d')-2)){
-    echo "Berhasil";
+    echo "Berhasil<br>";
 } elseif ($panjangNama < (date('d')-2)){
-    echo "Sedikit Lagi";
+    echo "Sedikit Lagi<br>";
 } else {
-    echo "Coba Lagi";
+    echo "Coba Lagi<br>";
 }
 
 //Latihan 2
@@ -32,7 +32,7 @@ for ($i = 0; $i < strlen($name); $i++){
     for($j = 0; $j < count($city); $j++){
         $addcity = strtolower($city[$j]);
         if ($searchcity == $addcity[0]){
-            array_push($array, $city[$y]);
+            array_push($array, $city[$j]);
         }
     }
 }
